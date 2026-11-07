@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "runtime": "Windows x64 source Web",
+  "dsh": "0.2.2-rc.1",
+  "node": "24.15.0",
+  "pnpm": "11.28.5",
+  "cuaDriver": "0.28.0",
+  "verifiedAt": "2026-11-07",
+  "checks": {
+    "officialNativeSdkReadOnlyE2e": {
+      "status": "passed",
+      "test": "packages/experimental/computer-use-cua-driver-native/tests/native.e2e.ts",
+      "scope": [
+        "Native SDK loading and tool discovery",
+        "Permission status with prompt=false",
+        "Provider disposal and registry release"
+      ],
+      "screenshots": false,
+      "input": false,
+      "modelCalls": false
+    },
+    "bundlePreview": "not-verified",
+    "productionActivation": "not-verified",
+    "desktopInteraction": "not-verified",
+    "otherMachines": "not-verified"
+  },
+  "scope": "Only the declared local Windows environment; SDK evidence is not bundle or production acceptance."
+}

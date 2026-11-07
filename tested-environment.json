@@ -19,10 +19,16 @@
       "input": false,
       "modelCalls": false
     },
-    "bundlePreview": "not-verified",
-    "productionActivation": "not-verified",
+    "bundlePreview": "passed",
+    "productionActivation": "passed-two-official-components-active",
     "desktopInteraction": "not-verified",
-    "otherMachines": "not-verified"
+    "otherMachines": "not-verified",
+    "bundleEnableDisableLifecycle": "passed-in-isolated-preview",
+    "visibleWindowRead": "passed-read-only",
+    "discoveredTools": 56,
+    "existingSessionsPreserved": true,
+    "sharedManifestPublication": "passed"
   },
-  "scope": "Only the declared local Windows environment; SDK evidence is not bundle or production acceptance."
+  "scope": "The declared local Windows environment only. Other machines, screenshots, desktop input, and model-driven interactions remain unverified.",
+  "runtimeSourceCommit": "b293c1c446c1437cfd304ea7b9924f2fb3f0754c"
 }

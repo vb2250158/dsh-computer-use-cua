@@ -26,6 +26,6 @@
 
 ## 验证范围
 
-当前只确认 Windows x64、Node `24.15.0`、pnpm `11.28.5`、DSH `0.2.2-rc.1` 下的官方 Cua Driver 原生 SDK 只读 e2e 已通过：发现工具、无提示检查权限并完成卸载；没有截图、输入或模型调用。此 bundle 的隔离预览、正式加载、实际桌面输入和其它电脑尚未验收，记录见 [tested-environment.json](tested-environment.json)。
+Windows x64、Node `24.15.0`、pnpm `11.28.5`、DSH `0.2.2-rc.1` 和 Cua Driver `0.28.0` 已完成官方原生 SDK 只读 e2e、独立 Web 预览、启停生命周期、正式加载与共享清单发布验证。驱动发现 56 个工具，只读窗口查询成功；正式服务中的两个官方组件均运行，原有会话保留。已安装和共享的运行版本固定为 `b293c1c446c1437cfd304ea7b9924f2fb3f0754c`；本次后续提交只补充验证说明，不改变运行配置。没有截图、鼠标键盘输入或模型调用，其它电脑尚未验收。接收机在现有同步器执行“检查更新 → 拉取并应用”，再核对本机加载与桌面权限。详见 [tested-environment.json](tested-environment.json)。
 
 官方能力与限制见 [DSH Computer use](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/subsystems/computer-use.md) 和 [Cua Driver 0.28.0](https://github.com/trycua/cua/tree/cua-driver-rs-v0.28.0/libs/cua-driver)。官方依赖保留各自作者与许可证；本仓库保持私有。

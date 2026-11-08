@@ -28,4 +28,8 @@
 
 Windows x64、Node `24.15.0`、pnpm `11.28.5`、DSH `0.2.2-rc.1` 和 Cua Driver `0.28.0` 已完成官方原生 SDK 只读 e2e、独立 Web 预览、启停生命周期、正式加载与共享清单发布验证。驱动发现 56 个工具，只读窗口查询成功；正式服务中的两个官方组件均运行，原有会话保留。已安装和共享的运行版本固定为 `b293c1c446c1437cfd304ea7b9924f2fb3f0754c`；本次后续提交只补充验证说明，不改变运行配置。没有截图、鼠标键盘输入或模型调用，其它电脑尚未验收。接收机在现有同步器执行“检查更新 → 拉取并应用”，再核对本机加载与桌面权限。详见 [tested-environment.json](tested-environment.json)。
 
-官方能力与限制见 [DSH Computer use](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/subsystems/computer-use.md) 和 [Cua Driver 0.28.0](https://github.com/trycua/cua/tree/cua-driver-rs-v0.28.0/libs/cua-driver)。官方依赖保留各自作者与许可证；本仓库保持私有。
+官方能力与限制见 [DSH Computer use](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/subsystems/computer-use.md) 和 [Cua Driver 0.28.0](https://github.com/trycua/cua/tree/cua-driver-rs-v0.28.0/libs/cua-driver)。官方依赖保留各自作者与许可证；仓库可见性与包元数据分开管理。
+
+## 许可
+
+本仓库原创的通用插件代码与配置以 [MIT](LICENSE) 许可提供。官方 DSH、Cua Driver 及其它外部依赖保留各自版权与许可证；此许可不覆盖它们。`private: true` 仅防止意外发布到 npm，不声明 GitHub 仓库可见性。运行配置、凭据、会话和用户媒体不属于本源码包。
